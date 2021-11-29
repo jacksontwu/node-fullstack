@@ -3,7 +3,7 @@ import { HealthService } from 'src/service';
 class HealthController {
     private service: HealthService = new HealthService();
 
-    health = async (ctx) => {
+    health = async (ctx: any) => {
         const health = this.service.health();
         ctx.body = { health };
     };

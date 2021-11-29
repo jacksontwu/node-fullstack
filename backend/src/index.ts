@@ -26,4 +26,4 @@ app.use(router.allowedMethods());
 
 app.listen(PORT);
 
-console.log(`应用启动成功 端口:${PORT}`);
+console.log(`Backend start successfully, port:${PORT}`);
