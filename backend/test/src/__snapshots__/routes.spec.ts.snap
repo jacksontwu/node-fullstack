@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppRoutes routes 1`] = `
+Array [
+  Object {
+    "action": [Function],
+    "method": "get",
+    "path": "/health",
+  },
+]
+`;

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`logger formatError 1`] = `
+Object {
+  "body": "c",
+  "err": 1,
+  "header": "d",
+  "method": "a",
+  "url": "b",
+}
+`;
+
+exports[`logger formatReq 1`] = `
+Object {
+  "body": "c",
+  "header": "d",
+  "method": "a",
+  "url": "b",
+}
+`;
+
+exports[`logger formatRes 1`] = `
+Object {
+  "body": "c",
+  "costTime": 1,
+  "header": "d",
+  "method": "a",
+  "response": "e",
+  "url": "b",
+}
+`;

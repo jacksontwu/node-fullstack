@@ -4,7 +4,7 @@ import * as bodyParser from 'koa-bodyparser';
 import { PORT } from './config';
 import AppRoutes from './routes';
 import { configure } from 'log4js';
-import { config, reqLogger, resLogger } from './log';
+import { config, reqLogger, resLogger } from 'src/log';
 
 const app = new Koa();
 const router = new Router();

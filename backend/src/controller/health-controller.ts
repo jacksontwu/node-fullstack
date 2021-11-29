@@ -1,4 +1,4 @@
-import { HealthService } from '../service';
+import { HealthService } from 'src/service';
 
 class HealthController {
     private service: HealthService = new HealthService();
