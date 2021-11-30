@@ -1,3 +1,3 @@
-export const config= {
-    host:"http://jsonplaceholder.typicode.com"
-}
+export const config = {
+    host: 'http://jsonplaceholder.typicode.com',
+};

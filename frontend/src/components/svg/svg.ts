@@ -1,7 +1,7 @@
 // import Vue from 'vue';
 // Vue.component("svg-icon", SvgIcon);
-const req = require.context("@/assets/icons", false, /\.svg$/);
-const requireAll = (requireContext:any) => requireContext.keys().map(requireContext);
+const req = require.context('@/assets/icons', false, /\.svg$/);
+const requireAll = (requireContext: any) => requireContext.keys().map(requireContext);
 requireAll(req);
 /*
     第一步
@@ -58,4 +58,4 @@ requireAll(req);
     提示：
     注意各个文件的路径，涉及文件都是component/svg文件夹
     具体文档：https://zhuanlan.zhihu.com/p/158743768
-*/ 
+*/

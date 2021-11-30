@@ -1,13 +1,13 @@
-import axios from "@/utils/request";
-export const loginApi=()=>{
+import axios from '@/utils/request';
+export const loginApi = () => {
     return axios({
-        path:"/users"
-    })
-}
-export const upApi=(data:any)=>{
+        path: '/users',
+    });
+};
+export const upApi = (data: any) => {
     return axios({
-        path:"/users",
-        method:"POST",
-        data
-    })
-}
+        path: '/users',
+        method: 'POST',
+        data,
+    });
+};
