@@ -1,9 +1,9 @@
-import { healthController } from './controller';
+import { HealthController } from './controller';
 
 export default [
     {
         path: '/health',
         method: 'get',
-        action: healthController.health,
+        action: new HealthController().health,
     },
 ];

@@ -1,3 +1,3 @@
-import healthController from './health-controller';
+import HealthController from './health-controller';
 
-export { healthController };
+export { HealthController };

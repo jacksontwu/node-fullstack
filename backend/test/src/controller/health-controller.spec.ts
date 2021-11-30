@@ -1,11 +1,12 @@
-import { healthController } from '../../../src/controller';
+import { HealthController } from '../../../src/controller';
 
 describe('healthController', () => {
-    it('health', async () => {
+    it('health', () => {
         const ctx = {
             body: null,
         };
-        await healthController.health(ctx);
+        const healthController = new HealthController();
+        healthController.health(ctx);
         expect(ctx.body).toMatchSnapshot();
     });
 });
