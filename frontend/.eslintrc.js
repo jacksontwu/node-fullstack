@@ -1,5 +1,5 @@
 module.exports = {
-    parser: '@typescript-eslint/parser',
+    parser: 'vue-eslint-parser',
     parserOptions: {
         ecmaVersion: 2020,
         sourceType: 'module',
@@ -11,9 +11,20 @@ module.exports = {
         '@vue/typescript/recommended',
         '@vue/prettier/@typescript-eslint'
     ],
-    rules: {
-        '@typescript-eslint/no-explicit-any': 'off',
-        '@typescript-eslint/no-unused-vars': 'off',
-        '@typescript-eslint/ban-ts-comment': 'off',
-    }
+    rules: {},
+    overrides: [{
+        files: ['*.ts'],
+        parser: '@typescript-eslint/parser',
+        parserOptions: {
+            ecmaVersion: 2020,
+            sourceType: 'module',
+        },
+        extends: [
+            'plugin:@typescript-eslint/recommended',
+            'plugin:prettier/recommended',
+        ],
+        rules: {
+            '@typescript-eslint/no-explicit-any': 'off',
+        },
+    }],
 };
