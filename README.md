@@ -1,7 +1,7 @@
 # node-fullstack
 
 ## frontend
-- vue3
+- vue
 - typescript
 
 ## backend
