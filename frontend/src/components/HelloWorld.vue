@@ -17,7 +17,7 @@ export default defineComponent({
     setup(props) {
         const { msg } = toRefs(props);
         const mdText = computed(() => {
-            return marked(msg.value, { sanitize: true });
+            return marked(msg.value);
         });
 
         return {

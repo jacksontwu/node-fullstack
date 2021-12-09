@@ -1,25 +1,26 @@
 {
   "compilerOptions": {
-    "target": "esnext", // 指定编译后的版本目录
-    "module": "esnext", // 指定要使用的模版标准
-    "lib": [ // 指定包含在编译中的库文件
-      "es6",
-      "dom"
-    ],
-    "allowJs": true, // 指定是否允许编辑js文件，默认false不编译
-    "checkJs": true, // 指定是否检查和报告js文件中的错误，默认为false
-    "strict": true,
-    "jsx": "preserve", // jsx代码的开发环境：preserve、react-native、react
+    "target": "esnext",
+    "module": "esnext",
     "moduleResolution": "node",
-    "baseUrl": "./",
-    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
     "esModuleInterop": true,
-    "preserveSymlinks": true,
-    "sourceRoot": "",
+    "baseUrl": ".",
+    "lib": ["esnext", "dom"],
+    "types": ["vite/client", "node", "jest"],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
-  }
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.spec.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+  ],
+  "exclude": ["node_modules", "dist", "tmp"]
 }

@@ -1,5 +1,21 @@
-# blog-vue3-master
+# frontend
+A frontend web runs on [vue3](https://vuejs.org/index.html)
 
-vue3 + ts + vite2 + element-plus 搭建的完整博客项目，如果想查看基础架构，点击前往[基础项目](https://github.com/cqdcyonghao/blog-vue3/tree/basic)
+## install
+```bash
+npm i
+```
+## test
+```bash
+npm run test
+```
+## run
+```bash
+npm run dev
+```
+then open `localhost:3000`
 
-未完待续……
+## build
+```bash
+npm run build
+```

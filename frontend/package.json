@@ -1,36 +1,44 @@
 {
-  "name": "blog-vue3-master",
+  "name": "frontend",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --fix --ext .ts,.vue"
+    "lint": "eslint . --fix --ext .ts,.vue",
+    "test": "jest"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^1.3.0",
     "axios": "^0.24.0",
     "element-plus": "^1.1.0-beta.5",
     "marked": "^4.0.6",
-    "vue": "^3.0.4",
-    "vue-router": "4.0.10",
+    "vue": "^3.2.19",
+    "vue-router": "4.0.12",
     "vuex": "4.0.2"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^3.1.8",
+    "@types/jest": "27.0.2",
     "@types/marked": "^4.0.1",
     "@types/node": "^16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
-    "@vue/compiler-sfc": "^3.0.4",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^9.1.0",
+    "@vue/compiler-sfc": "3.2.20",
+    "@vue/test-utils": "2.0.0-rc.16",
     "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.1.1",
+    "jest": "27.3.1",
+    "jest-serializer-vue": "2.0.2",
     "prettier": "^2.5.1",
-    "typescript": "^4.3.5",
-    "vite": "^2.4.4",
-    "vue-eslint-parser": "^8.0.1"
+    "ts-jest": "27.0.7",
+    "typescript": "4.4.4",
+    "vite": "2.6.13",
+    "vue-eslint-parser": "^8.0.1",
+    "vue-tsc": "0.28.10",
+    "vue3-jest": "27.0.0-alpha.2"
   }
 }
