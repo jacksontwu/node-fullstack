@@ -33,5 +33,3 @@ jobs:
       working-directory: frontend
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
-      with:
-        files: ./frontend/coverage/coverage-final.json, ./backend/coverage/coverage-final.json
