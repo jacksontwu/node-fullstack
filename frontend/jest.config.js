@@ -1,4 +1,5 @@
 module.exports = {
+  collectCoverage: true,
   testRegex: '.*\\.spec\\.ts$',
   moduleFileExtensions: ['js', 'ts', 'vue'],
   modulePaths: ['<rootDir>/src', '<rootDir>/node_modules'],
