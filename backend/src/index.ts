@@ -1,5 +1,6 @@
 import * as Koa from 'koa';
 import * as Router from 'koa-router';
+import * as  cors from '@koa/cors';
 import * as bodyParser from 'koa-bodyparser';
 import { PORT } from './config';
 import AppRoutes from './routes';
@@ -20,6 +21,7 @@ app.use(async (ctx, next) => {
     resLogger(ctx, end.getTime() - start.getTime());
 });
 
+app.use(cors());
 app.use(bodyParser());
 app.use(router.routes());
 app.use(router.allowedMethods());
