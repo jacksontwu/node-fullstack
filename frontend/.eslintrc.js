@@ -11,7 +11,10 @@ module.exports = {
         '@vue/typescript/recommended',
         '@vue/prettier/@typescript-eslint'
     ],
-    rules: {},
+    rules: {
+        'vue/multi-word-component-names': 0,
+        'vue/no-unused-components': 0,
+    },
     overrides: [{
         files: ['*.ts'],
         parser: '@typescript-eslint/parser',

@@ -2,7 +2,7 @@ import { HealthController } from './controller';
 
 export default [
     {
-        path: '/health',
+        path: '/api/health',
         method: 'get',
         action: new HealthController().health,
     },

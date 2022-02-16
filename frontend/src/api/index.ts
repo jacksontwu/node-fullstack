@@ -1,12 +1,9 @@
-import axios, { AxiosRequestConfig } from 'axios'
+import request from '../utils/request';
 
-const health = async () => {
-    const config: AxiosRequestConfig = {
+export const fetchData = (query: any) => {
+    return request({
+        url: './table.json',
         method: 'get',
-        url: 'http://localhost:3000/health',
-    };
-    const response = await axios(config);
-    return response.data.health;
-}
-
-export { health };
+        params: query,
+    });
+};

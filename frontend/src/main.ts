@@ -1,11 +1,9 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import './index.css';
-import router from './router/index';
-
-import ElementPlus from './plugins/element-plus';
+import router from './router';
+import store from './store';
+import installElementPlus from './plugins/element';
+import './assets/css/icon.css';
 const app = createApp(App);
-
-app.use(router);
-app.use(ElementPlus);
-app.mount('#app');
+installElementPlus(app);
+app.use(store).use(router).mount('#app');
