@@ -30,7 +30,7 @@ jobs:
       working-directory: backend
       
     - name: frontend check
-      run: npm i --force && npm run test
+      run: npm i --force
       working-directory: frontend
       
     - name: Upload coverage to Codecov

@@ -5,7 +5,7 @@ Array [
   Object {
     "action": [Function],
     "method": "get",
-    "path": "/health",
+    "path": "/api/health",
   },
 ]
 `;
