@@ -87,7 +87,7 @@
 <script>
 import { ref, reactive } from 'vue';
 import { ElMessage, ElMessageBox } from 'element-plus';
-import { fetchData } from '../api/index';
+import { fetchData, checkHealth } from '../api/index';
 
 export default {
     name: 'basetable',
@@ -105,6 +105,9 @@ export default {
             fetchData(query).then((res) => {
                 tableData.value = res.list;
                 pageTotal.value = res.pageTotal || 50;
+            });
+            checkHealth().then((res) => {
+                console.log(res);
             });
         };
         getData();

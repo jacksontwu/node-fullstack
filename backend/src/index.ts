@@ -1,6 +1,6 @@
 import * as Koa from 'koa';
 import * as Router from 'koa-router';
-import * as  cors from '@koa/cors';
+import * as cors from '@koa/cors';
 import * as bodyParser from 'koa-bodyparser';
 import { PORT } from './config';
 import AppRoutes from './routes';

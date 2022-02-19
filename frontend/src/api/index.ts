@@ -7,3 +7,10 @@ export const fetchData = (query: any) => {
         params: query,
     });
 };
+
+export const checkHealth = () => {
+    return request({
+        url: './api/health',
+        method: 'get',
+    });
+};

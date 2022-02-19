@@ -76,16 +76,6 @@ export default {
                         index: '/upload',
                         title: '文件上传',
                     },
-                    {
-                        index: '4',
-                        title: '三级菜单',
-                        subs: [
-                            {
-                                index: '/editor',
-                                title: '富文本编辑器',
-                            },
-                        ],
-                    },
                 ],
             },
             {
