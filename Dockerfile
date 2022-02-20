@@ -2,7 +2,7 @@ FROM alpine:3.14
 
 RUN sed -i 's/https/http/' /etc/apk/repositories
 
-RUN apk add curl bash ca-certificates openssh
+RUN apk add curl bash ca-certificates openssh nginx
 
 # nodejs
 RUN apk add --update nodejs npm
@@ -10,6 +10,7 @@ RUN npm config set registry https://registry.npm.taobao.org
 
 # nginx
 COPY ./nginx.conf /etc/nginx/nginx.conf
+RUN nginx -g "daemon off;"
 
 # frontend
 RUN mkdir -p /home/www/web
@@ -25,6 +26,6 @@ COPY ./backend /home/www/server
 RUN npm install
 
 EXPOSE 80
-EXPOSE 3000
+EXPOSE 8080
 
-CMD nohup sh -c 'npm run start && nginx -g "daemon off;"'
+CMD npm run start
