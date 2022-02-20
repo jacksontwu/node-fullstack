@@ -54,7 +54,6 @@ export default ({ command, mode }) => {
             chunkSizeWarningLimit: 1500,
             sourcemap: false,
             manifest: true,
-            assetsDir: 'static/img/',
             emptyOutDir: true,
             rollupOptions: {
                 output: {

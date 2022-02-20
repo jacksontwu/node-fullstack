@@ -52,14 +52,6 @@ const routes = [
                 component: () => import(/* webpackChunkName: "tabs" */ '../views/Tabs.vue'),
             },
             {
-                path: '/donate',
-                name: 'donate',
-                meta: {
-                    title: '鼓励作者',
-                },
-                component: () => import(/* webpackChunkName: "donate" */ '../views/Donate.vue'),
-            },
-            {
                 path: '/permission',
                 name: 'permission',
                 meta: {
@@ -69,28 +61,12 @@ const routes = [
                 component: () => import(/* webpackChunkName: "permission" */ '../views/Permission.vue'),
             },
             {
-                path: '/i18n',
-                name: 'i18n',
-                meta: {
-                    title: '国际化语言',
-                },
-                component: () => import(/* webpackChunkName: "i18n" */ '../views/I18n.vue'),
-            },
-            {
                 path: '/upload',
                 name: 'upload',
                 meta: {
                     title: '上传插件',
                 },
                 component: () => import(/* webpackChunkName: "upload" */ '../views/Upload.vue'),
-            },
-            {
-                path: '/icon',
-                name: 'icon',
-                meta: {
-                    title: '自定义图标',
-                },
-                component: () => import(/* webpackChunkName: "icon" */ '../views/Icon.vue'),
             },
             {
                 path: '/404',
@@ -134,7 +110,7 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-    document.title = `${to.meta.title} | vue-manage-system`;
+    document.title = `${to.meta.title} | frontend`;
     const role = localStorage.getItem('ms_username');
     if (!role && to.path !== '/login') {
         next('/login');
