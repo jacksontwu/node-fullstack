@@ -14,7 +14,7 @@ npm run test
 ```bash
 npm start
 ```
-then open `localhost:3000`
+then open `localhost:8080`
 ### prod env
 ```bash
 npm run pro
