@@ -28,4 +28,4 @@ RUN npm install
 EXPOSE 80
 EXPOSE 8080
 
-CMD npm run start
+CMD (nohup npm run start &) && (nginx -g "daemon off;") 

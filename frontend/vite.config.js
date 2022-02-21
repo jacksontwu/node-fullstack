@@ -59,7 +59,7 @@ export default ({ command, mode }) => {
                 output: {
                     chunkFileNames: 'static/js/[name].[hash].js',
                     entryFileNames: 'static/js/[name].[hash].js',
-                    assetFileNames: 'static/[ext]/[name].[hash].[ext]',
+                    assetFileNames: 'static/css/[name].[hash].[ext]',
                 },
             }
         }
