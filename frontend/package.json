@@ -1,11 +1,11 @@
 {
   "name": "frontend",
   "version": "0.0.0",
+  "author": "jacksontwu",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --fix --ext .ts,.vue",
-    "test": "jest"
+    "lint": "eslint . --fix --ext .ts,.vue"
   },
   "dependencies": {
     "axios": "^0.24.0",

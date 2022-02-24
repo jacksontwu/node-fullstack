@@ -15,12 +15,4 @@ npm run test
 npm start
 ```
 then open `localhost:8080`
-### prod env
-```bash
-npm run pro
-```
 
-## build
-```bash
-npm run build
-```

@@ -44,14 +44,6 @@ const routes = [
                 component: () => import(/* webpackChunkName: "form" */ '../views/BaseForm.vue'),
             },
             {
-                path: '/tabs',
-                name: 'tabs',
-                meta: {
-                    title: 'tab标签',
-                },
-                component: () => import(/* webpackChunkName: "tabs" */ '../views/Tabs.vue'),
-            },
-            {
                 path: '/permission',
                 name: 'permission',
                 meta: {
