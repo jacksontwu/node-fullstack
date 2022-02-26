@@ -10,7 +10,6 @@ RUN npm config set registry https://registry.npm.taobao.org
 
 # nginx
 COPY ./nginx.conf /etc/nginx/nginx.conf
-RUN nginx -g "daemon off;"
 
 # frontend
 RUN mkdir -p /home/www/web
