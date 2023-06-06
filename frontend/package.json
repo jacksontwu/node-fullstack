@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
-    "element-plus": "1.0.2-beta.52",
+    "element-plus": "2.0.6",
     "vue": "^3.1.2",
     "vue-cropperjs": "^5.0.0",
     "vue-router": "^4.0.10",
