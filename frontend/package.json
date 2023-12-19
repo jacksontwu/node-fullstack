@@ -8,7 +8,7 @@
     "lint": "eslint . --fix --ext .ts,.vue"
   },
   "dependencies": {
-    "axios": "^0.24.0",
+    "axios": "1.6.2",
     "element-plus": "2.0.6",
     "vue": "^3.1.2",
     "vue-cropperjs": "^5.0.0",
